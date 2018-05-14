@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "phpunit/php-invoker": "^2.0"
+    }
+}

@@ -20,12 +20,14 @@ class DatabaseTest extends TestCase
     
     public static function testInsertTable()
     {
-        Self::getConnection()->query("INSERT INTO hello238 (what) value ('coba')");
+        $sql = "INSERT INTO belajar (hasil) VALUES ('John')";
+        // use exec() because no results are returned
+        Self::getConnection()->exec($sql);
     }
     
     public static function testDeleteTable()
     {
-        Self::getConnection()->query("DROP TABLE INTO hello238");
+        Self::getConnection()->query("DROP TABLE belajar");
     }
 }
 
